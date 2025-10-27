@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Eliza Elynn – Blog</title>
-  <meta name="description" content="Daily cloud certification insights, AWS exam tips, and AI practitioner resources.">
+  <meta name="description" content="Explore daily AWS certification tips, AI exam strategies, and cloud career insights.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
@@ -39,23 +39,36 @@
       margin: 40px auto;
       padding: 0 20px;
     }
-    h1, h2 {
+    h1 {
       color: #005a9c;
+      font-size: 2em;
+      margin-bottom: 20px;
     }
-    .blog-post {
+    .blog-card {
       background: white;
       padding: 25px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-    .blog-post a {
-      color: #007acc;
-      font-weight: bold;
-      text-decoration: none;
+    .blog-card h2 {
+      margin-top: 0;
+      color: #005a9c;
     }
-    .blog-post a:hover {
-      text-decoration: underline;
+    .blog-card p {
+      margin-bottom: 15px;
+    }
+    .read-more {
+      display: inline-block;
+      padding: 10px 18px;
+      background-color: #007acc;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 500;
+    }
+    .read-more:hover {
+      background-color: #005fa3;
     }
     footer {
       text-align: center;
@@ -77,17 +90,22 @@
   </header>
 
   <div class="container">
+    <h1>Latest Blog Posts</h1>
 
-    <!-- ✍️ Blog Post Start -->
-    <div class="blog-post">
-      <h1>🧠 AWS Certified AI Practitioner (AIF C01) – Your Complete Guide to Exam Success</h1>
-      <p>The cloud industry is evolving fast and artificial intelligence (AI) is leading the charge. If you're looking to validate your foundational knowledge of AI and machine learning (ML) within the AWS ecosystem, the AWS Certified AI Practitioner certification is a powerful first step 🚀</p>
-      <p>👉 <a href="https://www.study4exam.com/amazon/free-aif-c01-questions" target="_blank">aws ai practitioner exam questions</a></p>
-      <!-- Add full article content here -->
+    <!-- Blog Card 1 -->
+    <div class="blog-card">
+      <h2>AWS Certified AI Practitioner (AIF C01) – Your Complete Guide</h2>
+      <p>The cloud industry is evolving fast and artificial intelligence is leading the charge. This guide helps you prepare for the AWS AI Practitioner exam with practice questions and topic breakdowns.</p>
+      <a class="read-more" href="aws-ai-practitioner-guide.html">Read More</a>
     </div>
-    <!-- ✍️ Blog Post End -->
 
-    <!-- 🆕 Add more blog-post divs below for future articles -->
+   <div class="blog-card">
+  <h2>AWS Cloud Practitioner vs AI Practitioner – Which One First?</h2>
+  <p>Choosing between the AWS Cloud Practitioner and AI Practitioner certifications depends on your career goals. The Cloud Practitioner (CLF C02) is ideal for beginners exploring cloud fundamentals, while the AI Practitioner (AIF C01) focuses on machine learning, generative AI, and ethical AI usage within AWS.</p>
+  <p>This comparison breaks down the exam formats, target audiences, and how each certification fits into your long-term cloud or AI career path.</p>
+  <a class="read-more" href="aws-ai-vs-cloud-practitioner.html">Read More</a>
+</div>
+
 
   </div>
 
