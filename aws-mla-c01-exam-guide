@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Prepare for AWS Certified Machine Learning Engineer Associate Exam in 2026</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #1a73e8;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #1f2937;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .highlight {
+            background-color: #eaf1ff;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>How to Prepare for the AWS Certified Machine Learning Engineer Associate Exam in 2026</h1>
+
+        <p>The <span class="highlight">AWS Certified Machine Learning Engineer – Associate (MLA-C01)</span> certification is one of the most sought-after credentials for professionals who want to validate their skills in designing, building, and deploying machine learning solutions on AWS. Whether you are a data scientist, ML engineer, or AI enthusiast, preparing strategically for this exam will save you time and boost your chances of success.</p>
+
+        <h2>1. Understand the Exam Structure</h2>
+        <p>Before diving into study materials, it’s essential to familiarise yourself with the exam layout:</p>
+        <ul>
+            <li><strong>Exam Code:</strong> MLA-C01</li>
+            <li><strong>Level:</strong> Associate</li>
+            <li><strong>Duration:</strong> 170 minutes</li>
+            <li><strong>Format:</strong> Multiple-choice & multiple-response</li>
+            <li><strong>Domains:</strong>
+                <ul>
+                    <li>Data Preparation – 20%</li>
+                    <li>Feature Engineering – 20%</li>
+                    <li>Model Training & Evaluation – 35%</li>
+                    <li>ML Deployment & Operations – 25%</li>
+                </ul>
+            </li>
+        </ul>
+        <p>Knowing the domain weightings helps you allocate study time effectively.</p>
+
+        <h2>2. Focus on Key AWS Services</h2>
+        <p>The exam tests your ability to use AWS ML services in real-world scenarios. Focus on mastering:</p>
+        <ul>
+            <li>Amazon SageMaker – Training, tuning, and deploying models</li>
+            <li>AWS Glue – Data preparation and ETL</li>
+            <li>AWS Lambda – Automating ML workflows</li>
+            <li>Amazon S3 – Storage for datasets and artefacts</li>
+            <li>CloudWatch / Step Functions – Monitoring and orchestration</li>
+        </ul>
+        <p>Hands-on experience with these services is critical for success.</p>
+
+        <h2>3. Take Practice Questions</h2>
+        <p>One of the best ways to prepare is to practice with real exam-style questions. Doing so helps you understand the question format, difficulty level, and scenario-based problems. You can start with free MLA-C01 practice questions here: <a href="https://www.study4exam.com/amazon/free-mla-c01-questions" target="_blank">AWS Certified Machine Learning Engineer Associate Exam – Free Questions</a>.</p>
+        <p>Regular practice will build confidence and help you identify areas that need more focus.</p>
+
+        <h2>4. Build a Study Plan</h2>
+        <p>Create a structured study plan based on exam domains. Include:</p>
+        <ul>
+            <li>Daily hands-on exercises on SageMaker or other AWS services</li>
+            <li>Weekly revision of important ML concepts and AWS best practices</li>
+            <li>Practice test sessions to simulate real exam conditions</li>
+        </ul>
+        <p>Consistency is more important than cramming — allocate enough time for understanding and practice.</p>
+
+        <h2>5. Key Tips for Exam Day</h2>
+        <ul>
+            <li>Read questions carefully, especially scenario-based ones</li>
+            <li>Manage your time efficiently (roughly 2–3 minutes per question)</li>
+            <li>Review your answers if time permits</li>
+        </ul>
+
+        <p>By following a structured approach and practising regularly, passing the <span class="highlight">AWS Certified Machine Learning Engineer Associate Exam (MLA-C01)</span> in 2026 is achievable.</p>
+    </div>
+</body>
+</html>
