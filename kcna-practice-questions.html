@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Free Practice Questions for Kubernetes and Cloud Native Associate (KCNA)</title>
+  <meta name="description" content="Free KCNA practice questions to test your Kubernetes and cloud native fundamentals across orchestration, observability, and application delivery." />
+  <meta name="author" content="Eliza Elynn" />
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --panel:#0f1629;
+      --panel-2:#121a33;
+      --text:#e9edf8;
+      --muted:#a8b2d1;
+      --accent:#3da9fc;
+      --accent-2:#7cc4ff;
+      --success:#30c48d;
+      --border:#1e2844;
+      --shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+    /* Reset */
+    *,*::before,*::after{box-sizing:border-box}
+    body{
+      margin:0;
+      background: radial-gradient(1200px 600px at 10% 10%, #101a33 0%, #0b1220 60%, #080e1a 100%);
+      color:var(--text);
+      font: 16px/1.6 "Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{color:var(--accent-2); text-decoration:underline}
+
+    /* Container */
+    .wrap{
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 28px 20px 60px;
+    }
+
+    /* Header */
+    .hero{
+      background: linear-gradient(135deg, rgba(61,169,252,0.12), rgba(16,26,51,0.6));
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 26px 24px;
+      box-shadow: var(--shadow);
+    }
+    .kube-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      background: rgba(61,169,252,0.12);
+      border:1px solid rgba(61,169,252,0.25);
+      color: var(--accent-2);
+      padding:8px 12px;
+      border-radius:999px;
+      font-weight:600;
+      font-size:14px;
+      letter-spacing:0.2px;
+    }
+    .kube-logo{
+      width:20px; height:20px; display:inline-block;
+      background:
+        radial-gradient(circle at 50% 50%, #ffffff 0 35%, transparent 36%),
+        conic-gradient(from 0deg, #ffffff 0 360deg);
+      /* Minimal stylized wheel using CSS — placeholder */
+      border-radius:50%;
+      box-shadow: 0 0 0 3px #3da9fc inset;
+    }
+    h1{
+      margin:14px 0 8px;
+      font-size: clamp(24px, 3.8vw, 34px);
+      line-height:1.2;
+      letter-spacing:0.2px;
+    }
+    .subtitle{
+      color:var(--muted);
+      font-size: 15px;
+      margin-top:6px;
+    }
+
+    /* Section cards */
+    .card{
+      background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:22px;
+      margin-top:22px;
+      box-shadow: var(--shadow);
+    }
+    .card h2{
+      margin:0 0 12px;
+      font-size: clamp(18px, 2.6vw, 22px);
+      letter-spacing:0.2px;
+    }
+    .card p{margin: 10px 0 0}
+    .list{margin:12px 0 0; padding-left:18px}
+    .list li{margin:8px 0}
+    .label{
+      display:inline-block;
+      background: rgba(168,178,209,0.12);
+      border:1px solid rgba(168,178,209,0.25);
+      color: var(--muted);
+      font-size:12px;
+      padding:4px 8px;
+      border-radius:8px;
+      margin-bottom:8px;
+    }
+
+    /* Q&A */
+    .qa{
+      display:grid;
+      gap:12px;
+      margin-top:12px;
+    }
+    .qa-item{
+      border:1px dashed var(--border);
+      border-radius:12px;
+      padding:14px;
+      background: rgba(16,26,51,0.35);
+    }
+    .q{
+      font-weight:700;
+      margin-bottom:8px;
+    }
+    .opts{
+      display:flex; flex-wrap:wrap; gap:10px;
+      color: var(--muted);
+      font-size:14px;
+    }
+    .answer{
+      margin-top:8px;
+      color: var(--success);
+      font-weight:600;
+    }
+
+    /* Resources */
+    .resources{
+      display:grid;
+      gap:10px;
+      margin-top:12px;
+    }
+    .resource-item{
+      display:flex; align-items:center; gap:10px;
+      padding:12px 14px;
+      border-radius:12px;
+      background: rgba(61,169,252,0.08);
+      border:1px solid rgba(61,169,252,0.22);
+    }
+    .dot{
+      width:8px; height:8px; border-radius:50%;
+      background: var(--accent);
+      box-shadow: 0 0 8px rgba(61,169,252,0.8);
+      flex-shrink:0;
+    }
+
+    /* Footer hook */
+    .hook{
+      color:var(--muted);
+      font-style:italic;
+      font-size:15px;
+    }
+
+    /* Responsive fine-tuning */
+    @media (max-width:560px){
+      .qa-item{padding:12px}
+      .opts{font-size:13px}
+      .resource-item{padding:10px 12px}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <div class="kube-badge">
+        <span class="kube-logo" aria-hidden="true"></span>
+        <span>Kubernetes & Cloud Native</span>
+      </div>
+      <h1>Free Practice Questions for Kubernetes and Cloud Native Associate (KCNA)</h1>
+      <p class="subtitle">Your gateway to mastering Kubernetes and cloud native fundamentals — real-world, scenario-based practice for orchestration, observability, and delivery.</p>
+    </header>
+
+    <section class="card" aria-labelledby="intro-title">
+      <h2 id="intro-title">Overview</h2>
+      <p>Preparing for the KCNA certification means going beyond theory — you need to test your understanding with scenario-based questions that reflect real-world Kubernetes and cloud native challenges. These sample questions help you assess your readiness across key domains like orchestration, observability, and application delivery.</p>
+    </section>
+
+    <section class="card" aria-labelledby="samples-title">
+      <span class="label">Sample Questions</span>
+      <h2 id="samples-title">Practice set</h2>
+
+      <div class="qa">
+        <div class="qa-item">
+          <div class="q">Q1. Which Kubernetes object is responsible for maintaining the desired number of pod replicas?</div>
+          <div class="opts">A. Service &nbsp; B. Deployment &nbsp; C. ConfigMap &nbsp; D. Node</div>
+          <div class="answer">Answer: B — Deployments manage pod replicas and ensure the desired state.</div>
+        </div>
+
+        <div class="qa-item">
+          <div class="q">Q2. What is the role of kubectl in Kubernetes?</div>
+          <div class="opts">A. It monitors logs &nbsp; B. It provisions cloud infrastructure &nbsp; C. It interacts with the Kubernetes API server &nbsp; D. It stores container images</div>
+          <div class="answer">Answer: C — kubectl is the CLI tool for communicating with the API server.</div>
+        </div>
+
+        <div class="qa-item">
+          <div class="q">Q3. Which CNCF project focuses on observability and metrics collection?</div>
+          <div class="opts">A. Prometheus &nbsp; B. Envoy &nbsp; C. Helm &nbsp; D. Fluentd</div>
+          <div class="answer">Answer: A — Prometheus is widely used for metrics and monitoring.</div>
+        </div>
+
+        <div class="qa-item">
+          <div class="q">Q4. What does a Kubernetes Service do?</div>
+          <div class="opts">A. Stores secrets &nbsp; B. Provides persistent storage &nbsp; C. Exposes pods to network traffic &nbsp; D. Manages container images</div>
+          <div class="answer">Answer: C — Services expose pods and enable stable networking.</div>
+        </div>
+
+        <div class="qa-item">
+          <div class="q">Q5. Which component helps automate application delivery in cloud native environments?</div>
+          <div class="opts">A. CI/CD pipeline &nbsp; B. Pod autoscaler &nbsp; C. Node controller &nbsp; D. Scheduler</div>
+          <div class="answer">Answer: A — CI/CD pipelines streamline deployment and delivery.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="how-title">
+      <h2 id="how-title">How to use these questions</h2>
+      <ul class="list">
+        <li><strong>Mini-assessments:</strong> Treat each question as a checkpoint after studying a domain.</li>
+        <li><strong>Find gaps:</strong> Identify weak areas and revisit the syllabus breakdown.</li>
+        <li><strong>Hands-on first:</strong> Reinforce concepts with practical labs before attempting the full exam.</li>
+      </ul>
+    </section>
+
+    <section class="card" aria-labelledby="resources-title">
+      <span class="label">Recommended Resources</span>
+      <h2 id="resources-title">One-time links</h2>
+      <div class="resources">
+        <div class="resource-item">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://dev.to/eliza_elynn_f4d2eb744a9b8/kubernetes-and-cloud-native-associate-kcna-complete-exam-guide-for-2026-1hp6" target="_blank" rel="noopener">KCNA Exam Guide</a>
+        </div>
+        <div class="resource-item">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://www.study4exam.com/linux-foundation/syllabus/kcna" target="_blank" rel="noopener">KCNA Syllabus Breakdown</a>
+        </div>
+        <div class="resource-item">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://www.study4exam.com/linux-foundation/free-kcna-questions" target="_blank" rel="noopener">KCNA Practice Exam — Free Kubernetes Exam Questions</a>
+        </div>
+        <div class="resource-item">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://hackmd.io/@XOiXMc8EQZm56SokR5ZD4Q/SJ3dtT9xbl" target="_blank" rel="noopener">Cloud Native Certifications Guide for 2026 (Pillar Page)</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="hook-title">
+      <h2 id="hook-title">Reader hook</h2>
+      <p class="hook">Test your KCNA readiness with focused Kubernetes questions covering orchestration, observability, and cloud native delivery.</p>
+    </section>
+  </main>
+</body>
+</html>
